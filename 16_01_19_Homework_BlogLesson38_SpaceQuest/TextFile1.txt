@@ -1,0 +1,15 @@
+﻿                if (_badShipsArr[i].LocationOfThisY > thi_badShipsArr[i].ClientRectangle.Height + _badShipsArr[i].Height / 2 + 2)
+                {
+                    currentSpaceQuestGameManager.GoodSpaceShipGotDamaged(5, "!פיספסת חללית אויב");
+                    SpaceShipToUpperLocation(s);
+                }
+                if(_badShipsArr[i].Bound_badShipsArr[i].IntersectsWith(_goodSpaceShipBulllet.Bounds))
+                {                    
+                    currentSpaceQuestGameManager.EnemyShipDestroyed(s, 1);
+                    BulletUsedUp();
+                }
+                if(_badShipsArr[i].Bound_badShipsArr[i].IntersectsWith(_goodSpaceShip.Bounds))
+                {
+                    currentSpaceQuestGameManager.GoodSpaceShipGotDamaged(10, "!איזה לוזר, התפוצצת");
+                    SpaceShipToUpperLocation(s);
+                }
